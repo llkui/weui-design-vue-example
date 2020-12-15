@@ -1,13 +1,13 @@
 <template>
-  <div class="page js_show">
-    <div class="page__hd">
+  <div :class="(padding ? 'padding ' : '') + type" class="page js_show">
+    <div class="page__hd" v-if="title || desc">
       <h1 class="page__title">{{title}}</h1>
       <p class="page__desc">{{desc}}</p>
     </div>
     <div class="page__bd page__bd_spacing">
       <slot></slot>
     </div>
-    <div :class="footerFixed ? 'j_bottom' : ''" class="page__ft">
+    <div class="page__ft" v-if="showFooter">
       <a href>
         <img alt src="./../assets/icon_footer_link.png" />
       </a>
@@ -19,9 +19,20 @@
 export default {
   name: 'Page',
   props: {
+    type: {
+      type: String,
+      default: 'gray'
+    },
     title: String,
     desc: String,
-    footerFixed: Boolean
+    padding: {
+      type: Boolean,
+      default: true
+    },
+    showFooter: {
+      type: Boolean,
+      default: true
+    }
   }
 }
 </script>
@@ -39,18 +50,23 @@ export default {
   box-sizing: border-box;
   opacity: 0;
   z-index: 1;
+  display: flex;
+  flex-direction: column;
 }
 .page.js_show {
   opacity: 1;
 }
-.page {
+.page.padding {
   padding: env(safe-area-inset-top) env(safe-area-inset-right)
     env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
-.page {
+.page.gray {
   background-color: var(--weui-BG-0);
 }
-.page__hd {
+.page.white {
+  background-color: var(--weui-BG-2);
+}
+.page.padding .page__hd {
   padding: 40px;
 }
 .page__title {
@@ -64,7 +80,10 @@ export default {
   text-align: left;
   font-size: 14px;
 }
-.page__bd_spacing {
+.page__bd {
+  flex: 1;
+}
+.page.padding .page__bd_spacing {
   padding: 0 16px;
 }
 .page__ft {
@@ -76,11 +95,5 @@ export default {
 }
 .page__ft img {
   height: 19px;
-}
-.page__ft.j_bottom {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
 }
 </style>

@@ -16,6 +16,31 @@ const routes = [{
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import( /* webpackChunkName: "about" */ '../views/Button.vue')
+  },
+  {
+    path: '/form',
+    name: 'Form',
+    component: () => import('../views/Form.vue')
+  },
+  {
+    path: '/form_page',
+    name: 'FormPage',
+    component: () => import('../views/FormPage.vue')
+  },
+  {
+    path: '/form_input_status',
+    name: 'FormInputStatus',
+    component: () => import('../views/FormInputStatus.vue')
+  },
+  {
+    path: '/form_vcode',
+    name: 'FormVcode',
+    component: () => import('../views/FormVcode.vue')
+  },
+  {
+    path: '/form_checkbox',
+    name: 'FormCheckbox',
+    component: () => import('../views/FormCheckbox.vue')
   }
 ]
 

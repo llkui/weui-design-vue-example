@@ -1,6 +1,5 @@
 <template>
   <Page
-    :footerFixed="selected == -1"
     desc="WeUI 是一套同微信原生视觉体验一致的基础样式库，由微信官方设计团队为微信内网页和微信小程序量身设计，令用户的使用感知更加统一。"
     title="Weui Design Vue"
   >
@@ -145,6 +144,10 @@ li:first-child {
 .weui-flex img {
   width: 30px;
   height: 30px;
+}
+body[data-weui-theme='dark'] .weui-flex img {
+  -webkit-filter: invert(100) hue-rotate(180deg);
+  filter: invert(100) hue-rotate(180deg);
 }
 .weui-cells {
   margin-top: 0;
