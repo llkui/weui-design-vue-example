@@ -41,6 +41,16 @@ const routes = [{
     path: '/form_checkbox',
     name: 'FormCheckbox',
     component: () => import('../views/FormCheckbox.vue')
+  },
+  {
+    path: '/form_radio',
+    name: 'FormRadio',
+    component: () => import('../views/FormRadio.vue')
+  },
+  {
+    path: '/form_switch',
+    name: 'FormSwitch',
+    component: () => import('../views/FormSwitch.vue')
   }
 ]
 
