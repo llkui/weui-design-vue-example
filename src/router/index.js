@@ -51,6 +51,21 @@ const routes = [{
     path: '/form_switch',
     name: 'FormSwitch',
     component: () => import('../views/FormSwitch.vue')
+  },
+  {
+    path: '/form_select',
+    name: 'FormSelect',
+    component: () => import('../views/FormSelect.vue')
+  },
+  {
+    path: '/form_select_primary',
+    name: 'FormSelectPrimary',
+    component: () => import('../views/FormSelectPrimary.vue')
+  },
+  {
+    path: '/form_textarea',
+    name: 'FormTextarea',
+    component: () => import('../views/FormTextarea.vue')
   }
 ]
 
