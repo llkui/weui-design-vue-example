@@ -119,7 +119,7 @@ export default {
 }
 </script>
 
-<style lange="scss">
+<style lange="scss" scoped>
 ul {
   list-style: none;
 }

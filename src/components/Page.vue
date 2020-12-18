@@ -1,8 +1,8 @@
 <template>
   <div :class="(padding ? 'padding ' : '') + type" class="page js_show">
     <div class="page__hd" v-if="title || desc">
-      <h1 class="page__title">{{title}}</h1>
-      <p class="page__desc">{{desc}}</p>
+      <h1 class="page__title">{{ title }}</h1>
+      <p class="page__desc">{{ desc }}</p>
     </div>
     <div class="page__bd page__bd_spacing">
       <slot></slot>
@@ -66,7 +66,7 @@ export default {
 .page.white {
   background-color: var(--weui-BG-2);
 }
-.page.padding .page__hd {
+.page .page__hd {
   padding: 40px;
 }
 .page__title {

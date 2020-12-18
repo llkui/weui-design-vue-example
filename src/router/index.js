@@ -66,6 +66,21 @@ const routes = [{
     path: '/form_textarea',
     name: 'FormTextarea',
     component: () => import('../views/FormTextarea.vue')
+  },
+  {
+    path: '/list',
+    name: 'List',
+    component: () => import('../views/List.vue')
+  },
+  {
+    path: '/slider',
+    name: 'Slider',
+    component: () => import('../views/Slider.vue')
+  },
+  {
+    path: '/uploader',
+    name: 'Uploader',
+    component: () => import('../views/Uploader.vue')
   }
 ]
 

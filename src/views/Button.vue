@@ -1,5 +1,5 @@
 <template>
-  <Page desc="按钮" title="Button">
+  <Page desc="按钮" title="Button" :padding="false">
     <div class="button-sp-area">
       <weui-button>页面主操作</weui-button>
       <weui-button :loading="true">页面主操作</weui-button>
