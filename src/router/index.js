@@ -81,6 +81,21 @@ const routes = [{
     path: '/uploader',
     name: 'Uploader',
     component: () => import('../views/Uploader.vue')
+  },
+  {
+    path: '/article',
+    name: 'Article',
+    component: () => import('../views/Article.vue')
+  },
+  {
+    path: '/badge',
+    name: 'Badge',
+    component: () => import('../views/Badge.vue')
+  },
+  {
+    path: '/flex',
+    name: 'Flex',
+    component: () => import('../views/Flex.vue')
   }
 ]
 
