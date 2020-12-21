@@ -63,7 +63,7 @@ export default {
             { title: 'Badge', url: '/badge' },
             { title: 'Flex', url: '/flex' },
             { title: 'Footer', url: '/footer' },
-            { title: 'Gallery', url: '/Gallery' },
+            { title: 'Gallery', url: '/gallery' },
             { title: 'Grid', url: '/grid' },
             { title: 'Icons', url: '/icons' },
             { title: 'Loading', url: '/loading' },

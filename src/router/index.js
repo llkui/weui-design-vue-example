@@ -98,6 +98,26 @@ const routes = [{
     component: () => import('../views/Flex.vue')
   },
   {
+    path: '/footer',
+    name: 'Footer',
+    component: () => import('../views/Footer.vue')
+  },
+  {
+    path: '/gallery',
+    name: 'Gallery',
+    component: () => import('../views/Gallery.vue')
+  },
+  {
+    path: '/grid',
+    name: 'Grid',
+    component: () => import('../views/Grid.vue')
+  },
+  {
+    path: '/icons',
+    name: 'Icons',
+    component: () => import('../views/Icons.vue')
+  },
+  {
     path: '/search-bar',
     name: 'SearchBar',
     component: () => import('../views/SearchBar.vue')
