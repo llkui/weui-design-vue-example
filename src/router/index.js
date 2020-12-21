@@ -96,7 +96,13 @@ const routes = [{
     path: '/flex',
     name: 'Flex',
     component: () => import('../views/Flex.vue')
+  },
+  {
+    path: '/search-bar',
+    name: 'SearchBar',
+    component: () => import('../views/SearchBar.vue')
   }
+
 ]
 
 const router = new VueRouter({
