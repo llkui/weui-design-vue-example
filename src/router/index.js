@@ -143,6 +143,31 @@ const routes = [{
     component: () => import('../views/Progress.vue')
   },
   {
+    path: '/msg',
+    name: 'Msg',
+    component: () => import('../views/Msg.vue')
+  },
+  {
+    path: '/msg_success',
+    name: 'MsgSuccess',
+    component: () => import('../views/MsgSuccess.vue')
+  },
+  {
+    path: '/msg_warn',
+    name: 'MsgWarn',
+    component: () => import('../views/MsgWarn.vue')
+  },
+  {
+    path: '/msg_text',
+    name: 'MsgText',
+    component: () => import('../views/MsgText.vue')
+  },
+  {
+    path: '/msg_text_primary',
+    name: 'MsgTextPrimary',
+    component: () => import('../views/MsgTextPrimary.vue')
+  },
+  {
     path: '/picker',
     name: 'Picker',
     component: () => import('../views/Picker.vue')
