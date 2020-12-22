@@ -118,6 +118,31 @@ const routes = [{
     component: () => import('../views/Icons.vue')
   },
   {
+    path: '/loading',
+    name: 'Loading',
+    component: () => import('../views/Loading.vue')
+  },
+  {
+    path: '/loadmore',
+    name: 'Loadmore',
+    component: () => import('../views/Loadmore.vue')
+  },
+  {
+    path: '/panel',
+    name: 'Panel',
+    component: () => import('../views/Panel.vue')
+  },
+  {
+    path: '/preview',
+    name: 'Preview',
+    component: () => import('../views/Preview.vue')
+  },
+  {
+    path: '/progress',
+    name: 'Progress',
+    component: () => import('../views/Progress.vue')
+  },
+  {
     path: '/picker',
     name: 'Picker',
     component: () => import('../views/Picker.vue')
