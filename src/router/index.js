@@ -143,6 +143,21 @@ const routes = [{
     component: () => import('../views/Progress.vue')
   },
   {
+    path: '/action-sheet',
+    name: 'ActionSheet',
+    component: () => import('../views/ActionSheet.vue')
+  },
+  {
+    path: '/dialog',
+    name: 'Dialog',
+    component: () => import('../views/Dialog.vue')
+  },
+  {
+    path: '/half-screen-dialog',
+    name: 'HalfScreenDialog',
+    component: () => import('../views/HalfScreenDialog.vue')
+  },
+  {
     path: '/msg',
     name: 'Msg',
     component: () => import('../views/Msg.vue')
