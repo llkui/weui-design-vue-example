@@ -118,6 +118,11 @@ const routes = [{
     component: () => import('../views/Icons.vue')
   },
   {
+    path: '/picker',
+    name: 'Picker',
+    component: () => import('../views/Picker.vue')
+  },
+  {
     path: '/toast',
     name: 'Toast',
     component: () => import('../views/Toast.vue')
