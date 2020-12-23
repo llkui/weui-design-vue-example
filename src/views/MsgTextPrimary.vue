@@ -12,7 +12,16 @@
       <a href="javascript:">文字链接</a>
     </template>
     <template slot="btn">
-      <weui-button>推荐操作</weui-button>
+      <weui-button @click="back()">推荐操作</weui-button>
     </template>
   </weui-msg>
 </template>
+<script>
+export default {
+  methods: {
+    back: function () {
+      this.$router.go(-1)
+    }
+  }
+}
+</script>

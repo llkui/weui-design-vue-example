@@ -11,7 +11,7 @@
         v-for="(menu, index) of menuList"
       >
         <weui-flex>
-          <weui-flex-item>{{menu.name}}</weui-flex-item>
+          <weui-flex-item>{{ menu.name }}</weui-flex-item>
           <img :src="menu.icon" alt />
         </weui-flex>
         <div class="page__category">

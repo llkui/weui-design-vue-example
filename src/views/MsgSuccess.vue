@@ -5,7 +5,7 @@
       <a href="javascript:">文字链接</a>
     </template>
     <template slot="btn">
-      <weui-button>推荐操作</weui-button>
+      <weui-button @click="back()">推荐操作</weui-button>
     </template>
     <template slot="tips">
       提示详情，可根据实际需要安排，如果换行则不超过规定长度，居中展现
@@ -21,3 +21,12 @@
     </template>
   </weui-msg>
 </template>
+<script>
+export default {
+  methods: {
+    back: function () {
+      this.$router.go(-1)
+    }
+  }
+}
+</script>

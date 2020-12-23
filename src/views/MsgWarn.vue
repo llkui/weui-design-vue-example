@@ -9,7 +9,7 @@
       <a href="javascript:">文字链接</a>
     </template>
     <template slot="btn">
-      <weui-button type="default">辅助操作</weui-button>
+      <weui-button type="default" @click="back()">辅助操作</weui-button>
     </template>
     <template slot="extra">
       <weui-footer>
@@ -21,3 +21,12 @@
     </template>
   </weui-msg>
 </template>
+<script>
+export default {
+  methods: {
+    back: function () {
+      this.$router.go(-1)
+    }
+  }
+}
+</script>

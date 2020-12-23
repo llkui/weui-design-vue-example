@@ -1,11 +1,15 @@
 <template>
-  <Page title="Dialog" desc="对话框">
-    <weui-button @click="showDialog('ios1')">iOS Dialog样式一</weui-button>
-    <weui-button @click="showDialog('ios2')">iOS Dialog样式二</weui-button>
-    <weui-button @click="showDialog('android1')"
+  <Page title="Dialog" desc="对话框" type="white">
+    <weui-button type="default" @click="showDialog('ios1')"
+      >iOS Dialog样式一</weui-button
+    >
+    <weui-button type="default" @click="showDialog('ios2')"
+      >iOS Dialog样式二</weui-button
+    >
+    <weui-button type="default" @click="showDialog('android1')"
       >Android Dialog样式一</weui-button
     >
-    <weui-button @click="showDialog('android2')"
+    <weui-button type="default" @click="showDialog('android2')"
       >Android Dialog样式二</weui-button
     >
     <weui-dialog
@@ -26,7 +30,7 @@ import Page from "@/components/Page.vue";
 
 export default {
   components: { Page },
-  data() {
+  data () {
     return {
       isVisible: false,
       type: "ios",
@@ -38,7 +42,7 @@ export default {
     };
   },
   methods: {
-    showDialog(type) {
+    showDialog (type) {
       this.isVisible = true;
       switch (type) {
         case "ios1":
@@ -76,10 +80,10 @@ export default {
           break;
       }
     },
-    handleCancel() {
+    handleCancel () {
       this.isVisible = false;
     },
-    handleOk() {
+    handleOk () {
       this.isVisible = false;
     },
   },

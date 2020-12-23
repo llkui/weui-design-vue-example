@@ -1,7 +1,11 @@
 <template>
-  <Page title="ActionSheet" desc="弹出式菜单">
-    <weui-button type="default" @click="show('ios')">iOS ActionSheet</weui-button>
-    <weui-button type="default" @click="show('android')">Android ActionSheet</weui-button>
+  <Page title="ActionSheet" desc="弹出式菜单" type="white">
+    <weui-button type="default" @click="show('ios')"
+      >iOS ActionSheet</weui-button
+    >
+    <weui-button type="default" @click="show('android')"
+      >Android ActionSheet</weui-button
+    >
   </Page>
 </template>
 <script>
@@ -14,7 +18,6 @@ export default {
       const config = {
         type: value,
         title: "这是一个标题，可以为一行或者两行。",
-        maskClosable: value === "ios" ? true : false,
       };
       const menus = [
         { text: "示例菜单" },
