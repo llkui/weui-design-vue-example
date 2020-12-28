@@ -198,11 +198,20 @@ const routes = [{
     component: () => import('../views/TopTips.vue')
   },
   {
+    path: '/navbar',
+    name: 'Navbar',
+    component: () => import('../views/Navbar.vue')
+  },
+  {
+    path: '/tabbar',
+    name: 'Tabbar',
+    component: () => import('../views/Tabbar.vue')
+  },
+  {
     path: '/search-bar',
     name: 'SearchBar',
     component: () => import('../views/SearchBar.vue')
   }
-
 ]
 
 const router = new VueRouter({

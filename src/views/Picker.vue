@@ -1,8 +1,13 @@
 <template>
-  <Page title="Picker" desc="多列选择器，需要配合js实现" :padding="false">
-    <weui-button @click="show()">单列选择器</weui-button>
-    <weui-button @click="showTwo()">多列选择器</weui-button>
-    <weui-button @click="showDate()">日期选择器</weui-button>
+  <Page
+    title="Picker"
+    desc="多列选择器，需要配合js实现"
+    type="white"
+    :padding="false"
+  >
+    <weui-button @click="show()" type="default">单列选择器</weui-button>
+    <weui-button @click="showTwo()" type="default">多列选择器</weui-button>
+    <weui-button @click="showDate()" type="default">日期选择器</weui-button>
   </Page>
 </template>
 <script>
@@ -10,7 +15,7 @@ import Page from "@/components/Page.vue";
 
 export default {
   components: { Page },
-  data() {
+  data () {
     return {
       type: "4",
       traffic: {
