@@ -16,13 +16,14 @@
       :visible="isVisible"
       :type="type"
       :title="title"
-      :content="content"
       :cancelText="cancelText"
       :okText="okText"
       :showCancel="showCancel"
       @onCancel="handleCancel($event)"
       @onOk="handleOk($event)"
-    ></weui-dialog>
+    >
+      {{ content }}
+    </weui-dialog>
   </Page>
 </template>
 <script>

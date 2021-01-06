@@ -3,9 +3,13 @@
     <weui-tab>
       <weui-tab-panel></weui-tab-panel>
       <weui-tabbar :selectedIndex.sync="selectedIndex">
-        <weui-tabbar-item :icon="tabbar" label="微信"></weui-tabbar-item>
+        <weui-tabbar-item
+          :icon="tabbar"
+          label="微信"
+          :count="8"
+        ></weui-tabbar-item>
         <weui-tabbar-item :icon="tabbar" label="通讯录"></weui-tabbar-item>
-        <weui-tabbar-item :icon="tabbar" label="发现"></weui-tabbar-item>
+        <weui-tabbar-item :icon="tabbar" label="发现" dot></weui-tabbar-item>
         <weui-tabbar-item :icon="tabbar" label="我"></weui-tabbar-item>
       </weui-tabbar>
     </weui-tab>
