@@ -17,8 +17,8 @@
       </weui-cell>
     </weui-cell-group>
     <weui-gallery
-      :show="show"
-      :img="img.url"
+      :visible="show"
+      :src="img.url"
       :canDelete="true"
       @onDelete="deleteGallery()"
       @onClick="hide()"
