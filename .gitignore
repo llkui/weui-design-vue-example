@@ -1,6 +1,8 @@
 .DS_Store
-node_modules
-/dist
+/vue2/node_modules
+/vue2Ts/node_modules
+/vue2/dist
+/vue2Ts/dist
 
 
 # local env files
@@ -22,5 +24,8 @@ pnpm-debug.log*
 *.sln
 *.sw?
 
-package-lock.json
+/vue2/package-lock.json
+/vue2Ts/package-lock.json
 /.history
+/vue2/.history
+/vueTs/.history
