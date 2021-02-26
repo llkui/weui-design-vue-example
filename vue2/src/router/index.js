@@ -43,6 +43,11 @@ const routes = [{
     component: () => import('../views/FormCheckbox.vue')
   },
   {
+    path: '/form_access',
+    name: 'FormAccess',
+    component: () => import('../views/FormAccess.vue')
+  },
+  {
     path: '/form_radio',
     name: 'FormRadio',
     component: () => import('../views/FormRadio.vue')
@@ -181,6 +186,21 @@ const routes = [{
     path: '/msg_text_primary',
     name: 'MsgTextPrimary',
     component: () => import('../views/MsgTextPrimary.vue')
+  },
+  {
+    path: '/msg_custom_area_preview',
+    name: 'MsgCustomAreaPreview',
+    component: () => import('../views/MsgCustomAreaPreview.vue')
+  },
+  {
+    path: '/msg_custom_area_tips',
+    name: 'MsgCustomAreaTips',
+    component: () => import('../views/MsgCustomAreaTips.vue')
+  },
+  {
+    path: '/msg_custom_area_cell',
+    name: 'MsgCustomAreaCell',
+    component: () => import('../views/MsgCustomAreaCell.vue')
   },
   {
     path: '/picker',

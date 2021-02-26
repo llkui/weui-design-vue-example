@@ -12,7 +12,7 @@
     "vant": "^2.12.3",
     "vue": "^2.6.11",
     "vue-router": "^3.2.0",
-    "weui-design-vue": "^2.0.2",
+    "weui-design-vue": "^2.0.4",
     "wx-vue": "^2.0.1"
   },
   "devDependencies": {
