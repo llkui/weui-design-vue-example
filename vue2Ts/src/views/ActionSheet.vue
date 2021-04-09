@@ -25,9 +25,7 @@ export default Vue.extend({
         { text: '示例菜单' },
         { text: '负向菜单', type: 'warn' },
       ]
-      this.$actionSheet.show(config, menus).then((res) => {
-        console.log(res)
-      })
+      this.$actionSheet.show(config, menus).then((res: any) => {})
     },
   },
 })
