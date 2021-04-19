@@ -100,10 +100,10 @@ export default {
             cancelText: '辅助操作',
             okText: '主操作',
             onCancel: () => {
-              console.log('点击辅助操作')
+              this.$toast.info('点击辅助操作')
             },
             onOk: () => {
-              console.log('点击主操作')
+              this.$toast.info('点击主操作')
             }
           });
           break

@@ -30,7 +30,11 @@ export default {
       }, 4000);
     },
     info: function () {
-      this.$toast.info("文字提示");
+      this.$toast.info('文字提示', {
+        callback: () => {
+          this.$toast.info('执行callback');
+        }
+      });
     },
   },
 };

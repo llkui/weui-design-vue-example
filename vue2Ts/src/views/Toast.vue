@@ -31,7 +31,11 @@ export default Vue.extend({
       }, 4000)
     },
     info(): void {
-      this.$toast.info('文字提示')
+      this.$toast.info('文字提示', {
+        callback: () => {
+          this.$toast.info('执行callback');
+        }
+      });
     },
   },
 })
